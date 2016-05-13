@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'YYCache/*.{h}'
   
   s.libraries = 'sqlite3'
-  s.frameworks = CoreFoundation'
+  s.frameworks = 'Foundation', 'CoreFoundation'
   
 pch_YY = <<-EOS
 #ifndef TARGET_OS_IOS
